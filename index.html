@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bank App</title>
+</head> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
+<body>
+ <div class="container">
+ 	<div class="well text-center">
+ 		<h2>BankApp</h2>
+ 		<button id="accountBtn" class="btn btn-primary">Account</button>
+ 		<button id="addAccountBtn" class="btn btn-success">Add Account</button>
+ 		<button id="editDeleteBtn" class="btn btn-danger">Edit or Delete</button>
+ 	</div>
+<div id="account" class="row"> 
+	<div class="col-lg-10 col-lg-offset-1">
+		<div class="well well-sm text-center"><h3>Accounts</h3></div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>NAME</th>
+					<th>DEPOSID</th>
+					<th>CARD</th>
+				</tr>
+			</thead>
+			<tbody id="showAccounts">
+			 
+			</tbody>
+		</table>
+	</div>
+</div>
+<div id="addAccount" class="row"> <!-- addAccount -->
+	<div class="col-lg-10 col-lg-offset-1">
+		<div class="well well-sm text-center"><h3>Add Accounts</h3></div>
+		 <input id="formId" class="form-control" placeholder="ID"><br>
+		 <input id="formName" class="form-control" placeholder="NAME"><br>
+		 <input id="formDeposid" class="form-control" placeholder="DEPOSID"><br>
+		 <input id="formCard" class="form-control" placeholder="CARD"><br>
+		 <button id="formBtn" class="btn btn-primary form-control">Add Account</button>
+	</div>
+</div>
+<div id="editDelete" class="row">  <!-- editDelete -->
+	<div class="col-lg-10 col-lg-offset-1">
+		<div class="well well-sm text-center"><h3>Edit or Delete</h3></div>
+		  <table class="table">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>NAME</th>
+					<th>DEPOSID</th>
+					<th>CARD</th>
+				</tr>
+			</thead>
+			<tbody id="showEdit">
+			 
+			</tbody>
+		</table>
+	</div>
+</div>
+<div id="editAccount" class="row">  <!-- editDelete -->
+	<div class="col-lg-10 col-lg-offset-1">
+		<div class="well well-sm text-center"><h3>Edit Account</h3></div>
+		 <input id="editId" class="form-control"><br>
+		 <input id="editName" class="form-control" ><br>
+		 <input id="editDeposid" class="form-control" ><br>
+		 <input id="editCard" class="form-control" ><br>
+		 <button id="formEditBtn" class="btn btn-warning form-control">EDIT</button>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
