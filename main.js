@@ -19,9 +19,6 @@ var editName = document.getElementById('editName');
 var editDeposid = document.getElementById('editDeposid');
 var editCard = document.getElementById('editCard');
 var formEditBtn = document.getElementById('formEditBtn');
-var ime=[1,2,3];
-ime.splice(2,1)
-console.log(ime);
 db = [
 {
 	id:1,
